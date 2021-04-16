@@ -1,0 +1,80 @@
+{
+   "updated":"April 2021",
+   "work":[
+      {
+         "company":"SLA California",
+         "company-label":"Surplus Lines Association of California",
+         "location":"San Francisco",
+         "date":"December 2018 - Present",
+         "title":"Software Engineer",
+         "bullets":[
+            "Maintain and enhance codebase of internal and client-facing software suite of web and Windows applications through the implementation of new features and projects",
+            "Develop in a wide array of environments including: ASP.Net MVC framework, WPF using MVVM for Windows apps, C# and Razor C#, Kendo UI, SQL, integration with OracleDB, Telerik Reporting, BitBucket VCS, Mantis, and Jira for bug tracking",
+            "Serve as a technical advisor on product development and business requirements by interfacing directly with technical clients and executives, as well as working alongside dev contractors to drive projects into rapid production",
+            "Enable growth of the team by leading technical interviews for application developers and infrastructure engineers"
+         ],
+         "tailwind-color":"bg-purple-300"
+      },
+      {
+         "company":"SLA California",
+         "company-label":"Surplus Lines Association of California",
+         "location":"San Francisco",
+         "date":"June 2017 - December 2018",
+         "title":"Infastructure Engineer",
+         "bullets":[
+            "Design and manage the internal IT architecture through the upgrading and implementation of various hardware and software components, including: Windows Servers, Fortinet VPN and Firewall, and internal fire share servers",
+            "Enhance the security and efficiency of the organization’s environment by providing technical expertise to our executives through the evaluation and assessment of various technology solutions prior to their adoption and integration",
+            "Oversee and administer the migration of in-house and Rackspace hosted data warehouses to Amazon Web Services",
+            "Provide technical assistance to the organization’s workforce by serving as the internal Helpdesk and IT support"
+         ],
+         "tailwind-color":"bg-purple-300"
+      },
+      {
+         "company":"Cal Poly",
+         "company-label":"California Polytechnic State University",
+         "location":"San Luis Obispo",
+         "date":"May - November 2016",
+         "title":"Web Developer",
+         "bullets":[
+            "Designed and built new web page templates and structures to modernize the Cal Poly website user experience, while also allowing for easier scalability of the website moving forward",
+            "Maintained and created various web pages using front end languages and frameworks (HTML, CSS, Javascript, JQuery, and Bootstrap) and backend languages (Python, C#, Java, SQL) ",
+            "Collaborated cross-platform with developers and wrote documentation using modern code editing and review systems"
+         ],
+         "tailwind-color":"bg-yellow-200"
+      },
+      {
+         "company":"Contracted Development",
+         "location":"San Luis Obispo",
+         "date":"Periodic gigs since 2016",
+         "title":"Web Developer and Designer",
+         "bullets":[
+            "Consulted with clients to understand business requirements and vision, then created websites",
+            "Conducted client workflow trainings with software tools and applications to allow for self-sufficient website maintenance and growth",
+            "Designed various logos and media assets using Illustrator, Photoshop, and After Effects"
+         ],
+         "tailwind-color":"bg-red-300"
+      },
+      {
+         "company":"Moon Valley Software",
+         "location":"Arroyo Grande",
+         "date":"Summer Internship 2015",
+         "title":"Software Engineer",
+         "bullets":[
+            "Scaled and enhanced parsing of large data by creating and refining search algorithms for web crawlers handling online business listings for thousands of clients",
+            "Improved efficiencies and structure of datasets by analyzing, cleaning, then refining high-usage SQL queries and databases",
+            "Developed and debugged backend components for proprietary software applications and services using Java & SQL"
+         ],
+         "tailwind-color":"bg-red-300"
+      },
+      {
+         "company":"Cal Poly",
+         "location":"Arroyo Grande",
+         "date":"June 2018",
+         "title":"B.S. Computer Engineering",
+         "bullets":[
+            "Networking, Operating Systems, Computer Architecture, Data Structures, Systems Programming, Embedded Systems, Systems and Signals, AI, Microcontroller Design"
+         ],
+         "tailwind-color":"bg-green-300"
+      }
+   ]
+}
