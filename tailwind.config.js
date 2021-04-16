@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
    mode: 'jit',
@@ -14,6 +15,9 @@ module.exports = {
    darkMode: false, // or 'media' or 'class'
    theme: {
       extend: {
+         fontFamily: {
+            sans: ['Inter', ...fontFamily.sans],
+         },
          colors: {
             bluegray: colors.blueGray,
          },

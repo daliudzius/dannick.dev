@@ -13,7 +13,7 @@
             "Serve as a technical advisor on product development and business requirements by interfacing directly with technical clients and executives, as well as working alongside dev contractors to drive projects into rapid production",
             "Enable growth of the team by leading technical interviews for application developers and infrastructure engineers"
          ],
-         "tailwind-color":"bg-purple-300"
+         "branch":"purple"
       },
       {
          "company":"SLA California",
@@ -27,7 +27,19 @@
             "Oversee and administer the migration of in-house and Rackspace hosted data warehouses to Amazon Web Services",
             "Provide technical assistance to the organization’s workforce by serving as the internal Helpdesk and IT support"
          ],
-         "tailwind-color":"bg-purple-300"
+         "branch":"purple"
+      },
+      {
+         "company":"Contracted Development",
+         "location":"San Luis Obispo",
+         "date":"Periodic gigs since 2016",
+         "title":"Web Developer and Designer",
+         "bullets":[
+            "Consulted with clients to understand business requirements and vision, then created websites",
+            "Conducted client workflow trainings with software tools and applications to allow for self-sufficient website maintenance and growth",
+            "Designed various logos and media assets using Illustrator, Photoshop, and After Effects"
+         ],
+         "branch":"yellow"
       },
       {
          "company":"Cal Poly",
@@ -40,20 +52,9 @@
             "Maintained and created various web pages using front end languages and frameworks (HTML, CSS, Javascript, JQuery, and Bootstrap) and backend languages (Python, C#, Java, SQL) ",
             "Collaborated cross-platform with developers and wrote documentation using modern code editing and review systems"
          ],
-         "tailwind-color":"bg-yellow-200"
+         "branch":"red"
       },
-      {
-         "company":"Contracted Development",
-         "location":"San Luis Obispo",
-         "date":"Periodic gigs since 2016",
-         "title":"Web Developer and Designer",
-         "bullets":[
-            "Consulted with clients to understand business requirements and vision, then created websites",
-            "Conducted client workflow trainings with software tools and applications to allow for self-sufficient website maintenance and growth",
-            "Designed various logos and media assets using Illustrator, Photoshop, and After Effects"
-         ],
-         "tailwind-color":"bg-red-300"
-      },
+      
       {
          "company":"Moon Valley Software",
          "location":"Arroyo Grande",
@@ -64,7 +65,7 @@
             "Improved efficiencies and structure of datasets by analyzing, cleaning, then refining high-usage SQL queries and databases",
             "Developed and debugged backend components for proprietary software applications and services using Java & SQL"
          ],
-         "tailwind-color":"bg-red-300"
+         "branch":"red"
       },
       {
          "company":"Cal Poly",
@@ -74,7 +75,7 @@
          "bullets":[
             "Networking, Operating Systems, Computer Architecture, Data Structures, Systems Programming, Embedded Systems, Systems and Signals, AI, Microcontroller Design"
          ],
-         "tailwind-color":"bg-green-300"
+         "branch":"green"
       }
    ]
 }

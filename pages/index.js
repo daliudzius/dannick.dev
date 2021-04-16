@@ -13,24 +13,28 @@ export default function Home() {
          <SideNav />
          <main>
             <header className='absolute flex pt-3 pl-4'>
-               <button>Dark Mode tba</button>
+               <button className='text-bluegray-400'>Site In Progress</button>
             </header>
             <div
                id='bio'
-               className='flex flex-col items-center justify-center min-h-screen'
+               className='flex flex-col items-center justify-center min-h-screen text-center'
             >
                {/** TODO: fix shoulder hard lines feathering on profile pic */}
                {/** Does 'Priority' actually improve performance? */}
-               <Image
-                  src='/profile-pic.png'
-                  alt='Picture of Dannick'
-                  width={400}
-                  height={400}
-               />
-               <h1 className='pb-5 text-6xl text-bluegray-800'>
+               <div className='mx-16'>
+                  <Image
+                     src='/profile-pic.png'
+                     alt='Picture of Dannick'
+                     quality={40}
+                     width={400}
+                     height={400}
+                     priority
+                  />
+               </div>
+               <h1 className='px-4 pb-5 text-4xl font-bold md:text-6xl md:font-normal text-bluegray-800'>
                   Hey, I'm Dannick
                </h1>
-               <p className='max-w-lg text-lg font-medium text-center text-bluegray-500'>
+               <p className='max-w-lg px-4 text-lg font-medium text-bluegray-500'>
                   I'm a developer, tinkerer, and creator. I work at{' '}
                   <a href='https://learningcenter.slacal.com/'>SLA</a> as a
                   software engineer building and shipping enterprise software.{' '}
@@ -52,7 +56,7 @@ export default function Home() {
                      </span>
                   </span>
                </p>
-               <div className='flex w-1/3 pt-4 justify-evenly'>
+               <div className='flex justify-center pt-4 space-x-4'>
                   <a href='https://github.com/daliudzius'>
                      <svg
                         viewBox='0 0 256 249'
@@ -70,19 +74,26 @@ export default function Home() {
                         <path d='M256 7.025C118.494 7.025 7.025 118.494 7.025 256S118.494 504.975 256 504.975 504.976 393.506 504.976 256C504.975 118.494 393.504 7.025 256 7.025zm-66.427 369.343h-54.665V199.761h54.665v176.607zM161.98 176.633c-17.853 0-32.326-14.591-32.326-32.587 0-17.998 14.475-32.588 32.326-32.588s32.324 14.59 32.324 32.588c.001 17.997-14.472 32.587-32.324 32.587zm232.45 199.735h-54.4v-92.704c0-25.426-9.658-39.619-29.763-39.619-21.881 0-33.312 14.782-33.312 39.619v92.704h-52.43V199.761h52.43v23.786s15.771-29.173 53.219-29.173c37.449 0 64.257 22.866 64.257 70.169l-.001 111.825z' />
                      </svg>
                   </a>
-                  <a>Mail?</a>
+                  <a href='https://dannickliudzius.com'>
+                     <svg
+                        viewBox='0 0 42 42'
+                        className='w-10 fill-current text-bluegray-600'
+                     >
+                        <path d='M21 0A21 21 0 003.21 32.12l-3 7.09a2 2 0 002.62 2.62l7.09-3A21 21 0 1021 0zm4 27.5H12a2 2 0 010-4h13a2 2 0 010 4zm5-9H12a2 2 0 010-4h18a2 2 0 010 4z' />
+                     </svg>
+                  </a>
                </div>
             </div>
             <div id='work' className='flex min-h-screen'>
-               <div className='absolute md:relative md:flex-none'>
+               <div className='absolute flex-none hidden md:relative filter md:block'>
                   <Image
                      src='/gitlife-placeholder.png'
                      alt='Experience Timeline'
-                     width={270}
+                     width={150}
                      height={1500}
                   />
                </div>
-               <div className='flex flex-col min-w-0 px-5 space-y-2 sm:pr-24 lg:w-5/6'>
+               <div className='flex flex-col min-w-0 px-5 space-y-4 md:px-0 md:pr-24 lg:w-5/6'>
                   <WorkExperiences />
                </div>
             </div>
@@ -116,7 +127,7 @@ function SideNav() {
       'w-8 text-bluegray-300 fill-current animate-pulse-subtle transition-all'
 
    return (
-      <nav className='fixed z-10 hidden w-10 origin-center -translate-y-1/2 sm:block top-1/2 right-8 transform-gpu'>
+      <nav className='fixed z-10 hidden w-10 origin-center -translate-y-1/2 md:block top-1/2 right-8 transform-gpu'>
          {/** SideNav. Keep centered on right side */}
          <ol>
             <li className='flex flex-col items-center'>
@@ -174,10 +185,18 @@ function SideNav() {
 
 function WorkExperiences() {
    const { work } = data
+   const colors = {
+      purple: 'bg-purple-300',
+      yellow: 'bg-yellow-200',
+      red: 'bg-red-300',
+      green: 'bg-green-300',
+      blue: 'bg-blue-300',
+   }
+
    return work.map((job) => (
-      <div key={job.date}>
-         <div className='flex items-center pr-6 overflow-hidden rounded-lg shadow-md h-11'>
-            <div className='px-3 py-2 bg-blue-300'>
+      <div key={job.date} className='text-bluegray-800'>
+         <div className='flex items-center overflow-hidden rounded-lg shadow h-11'>
+            <div className={'px-2.5 py-2 ' + colors[job.branch]}>
                <svg
                   fill='none'
                   className='text-gray-600 w-7'
@@ -192,12 +211,11 @@ function WorkExperiences() {
                   <path d='M18 9a9 9 0 01-9 9' />
                </svg>
             </div>
-
-            <h1 className='px-4 py-2 text-lg whitespace-pre text-bluegray-500'>
+            <h1 className='py-2 pl-4 pr-2 overflow-x-auto text-sm whitespace-pre md:text-lg'>
                {job.company}/<span className='font-semibold'>{job.title}</span>
             </h1>
          </div>
-         <ol className='ml-12 text-sm divide-y-2 rounded-lg shadow-md divide-bluegray-100'>
+         <ol className='ml-12 text-sm divide-y-2 rounded-lg shadow divide-bluegray-100'>
             {job.bullets.map((bullet) => (
                <li key={bullet.substring(0, 9)} className='px-5 py-2'>
                   {bullet}
