@@ -5,14 +5,15 @@ module.exports = {
    mode: 'jit',
    purge: {
       content: [
-         './pages/**/*.{js,ts,jsx,tsx}',
-         './components/**/*.{js,ts,jsx,tsx}',
+         './src/pages/**/*.{js,ts,jsx,tsx}',
+         './src/components/**/*.{js,ts,jsx,tsx}',
+         './src/**/*.{js,ts,jsx,tsx}',
       ],
       options: {
          keyframes: true,
       },
    },
-   darkMode: false, // or 'media' or 'class'
+   darkMode: 'class', // or 'media' or 'class'
    theme: {
       extend: {
          fontFamily: {
