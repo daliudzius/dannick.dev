@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
+import Link from 'next/link'
 
 export default function Navbar() {
    const [mounted, setMounted] = useState(false)
@@ -9,7 +10,7 @@ export default function Navbar() {
    useEffect(() => setMounted(true), [])
 
    return (
-      <div className='flex items-center justify-between h-24 dark:bg-gray-800'>
+      <header className='sticky top-0 z-10 flex items-center justify-between w-screen h-24 backdrop-filter backdrop-blur'>
          <button
             aria-label='Toggle Dark Mode'
             type='button'
@@ -18,7 +19,6 @@ export default function Navbar() {
          >
             {mounted && (
                <svg
-                  xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 24 24'
                   fill='currentColor'
                   stroke='currentColor'
@@ -44,17 +44,23 @@ export default function Navbar() {
          </button>
          <div className='mr-8 justify-self-end'>
             <nav>
-               <a className='inline-flex justify-center h-6 focus-within:items-center w-14'>
-                  Home
-               </a>
-               <a className='inline-flex justify-center h-6 focus-within:items-center w-14'>
-                  Exp
-               </a>
-               <a className='inline-flex justify-center h-6 focus-within:items-center w-14'>
-                  About
-               </a>
+               <Link href='/'>
+                  <a className='inline-flex justify-center h-6 focus-within:items-center w-14'>
+                     Home
+                  </a>
+               </Link>
+               <Link href='/experience'>
+                  <a className='inline-flex justify-center h-6 focus-within:items-center w-14'>
+                     Exp
+                  </a>
+               </Link>
+               <Link href='/about'>
+                  <a className='inline-flex justify-center h-6 focus-within:items-center w-14'>
+                     About
+                  </a>
+               </Link>
             </nav>
          </div>
-      </div>
+      </header>
    )
 }
