@@ -13,7 +13,7 @@ module.exports = {
          keyframes: true,
       },
    },
-   darkMode: 'class', // or 'media' or 'class'
+   darkMode: 'class',
    theme: {
       extend: {
          fontFamily: {
@@ -21,34 +21,14 @@ module.exports = {
          },
          colors: {
             bluegray: colors.blueGray,
-         },
-         animation: {
-            pulse: 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-            'pulse-subtle':
-               'pulse-subtle 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-         },
-         keyframes: {
-            pulse: {
-               '0%, 100%': {
-                  opacity: 0.5,
-               },
-               '50%': {
-                  opacity: 1,
-               },
-            },
-            'pulse-subtle': {
-               '0%, 100%': {
-                  opacity: 0.7,
-               },
-               '50%': {
-                  opacity: 1,
-               },
-            },
+            gray: colors.gray,
          },
       },
    },
    variants: {
-      extend: {},
+      extend: {
+         borderStyle: ['hover'],
+      },
    },
    plugins: [],
 }
