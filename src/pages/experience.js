@@ -8,6 +8,10 @@ export default function Home() {
       <div className='flex flex-col min-h-screen'>
          <Head>
             <title>Experience</title>
+            <meta
+               name='description'
+               content='This is a list of my work experiences. My resume can be downloaded here.'
+            />
          </Head>
          <Navbar />
          <main className='flex flex-col flex-grow p-8 overflow-y-auto text-bluegray-800 dark:text-bluegray-50'>

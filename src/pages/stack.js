@@ -7,6 +7,10 @@ export default function Home() {
       <div className='flex flex-col min-h-screen'>
          <Head>
             <title>Tech Stack</title>
+            <meta
+               name='description'
+               content='The tech stack I used to create this website included Nextjs, TailwindCSS, and Vercel for deployment and hosting.'
+            />
          </Head>
          <Navbar />
          <main className='flex flex-col flex-grow p-8 space-y-2 space-y-8 overflow-y-auto text-bluegray-800 dark:text-bluegray-50'>

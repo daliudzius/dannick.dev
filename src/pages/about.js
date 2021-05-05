@@ -9,6 +9,10 @@ export default function Home() {
       <div className='flex flex-col min-h-screen'>
          <Head>
             <title>Dannick.dev</title>
+            <meta
+               name='description'
+               content="Hi I'm Dannick Liudzius, a software developer currently working at SLA California. I enjoy designing both hardware and software."
+            />
          </Head>
          <Navbar />
          <main className='flex flex-col flex-grow p-8 space-y-2 overflow-y-auto text-bluegray-800 dark:text-bluegray-50'>
