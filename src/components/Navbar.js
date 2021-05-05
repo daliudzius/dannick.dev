@@ -10,7 +10,7 @@ export default function Navbar() {
    useEffect(() => setMounted(true), [])
 
    return (
-      <header className='sticky top-0 z-10 flex items-center justify-between w-screen h-24 backdrop-filter backdrop-blur'>
+      <header className='sticky top-0 z-10 flex items-center justify-between w-screen h-24 backdrop-filter backdrop-blur-sm backdrop-saturate-150'>
          <button
             aria-label='Toggle Dark Mode'
             type='button'

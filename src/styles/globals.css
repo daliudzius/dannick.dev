@@ -19,7 +19,15 @@
    }
 
    html {
-      min-width: 320px;
+      min-width: 375px;
       scroll-behavior: smooth;
+   }
+
+   .gradient-purple-pink {
+      @apply bg-gradient-to-br from-purple-500 to-pink-500;
+   }
+
+   .bg-theme {
+      @apply bg-gray-50 dark:bg-gray-900;
    }
 }

@@ -5,9 +5,9 @@ module.exports = {
    mode: 'jit',
    purge: {
       content: [
-         './src/pages/**/*.{js,ts,jsx,tsx}',
-         './src/components/**/*.{js,ts,jsx,tsx}',
-         './src/**/*.{js,ts,jsx,tsx}',
+         './src/pages/**/*.{js,jsx}',
+         './src/components/**/*.{js,jsx}',
+         './src/**/*.{js,jsx}',
       ],
       options: {
          keyframes: true,
@@ -28,6 +28,8 @@ module.exports = {
    variants: {
       extend: {
          borderStyle: ['hover'],
+         animation: ['first'],
+         borderRadius: ['last'],
       },
    },
    plugins: [],

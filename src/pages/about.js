@@ -20,10 +20,13 @@ export default function Home() {
                   height={150}
                   quality={40}
                   className='rounded-full'
+                  priority
                />
             </div>
             <p className='self-center'>My name is</p>
-            <h1 className='self-center text-4xl font-bold'>Dannick Liudzius</h1>
+            <h1 className='self-center text-4xl font-bold bg-clip-text gradient-purple-pink dark:text-transparent'>
+               Dannick&nbsp;Liudzius
+            </h1>
             <div className='self-center'>
                <SocialLinks />
             </div>
@@ -54,7 +57,7 @@ export default function Home() {
                <br />
                <div className='flex space-x-8 leading-8'>
                   <ul className='list-disc list-inside'>
-                     <li>JavaScript ES6+</li>
+                     <li>JavaScript&nbsp;ES6+</li>
                      <li>Next/React</li>
                      <li>Python</li>
                      <li>Arduino</li>
@@ -65,7 +68,7 @@ export default function Home() {
                      <li>Entity C#</li>
                      <li>LINQ</li>
                      <li>MySQL</li>
-                     <li>AWS (Various)</li>
+                     <li>AWS</li>
                   </ul>
                </div>
             </div>
