@@ -8,6 +8,10 @@ export default function Home() {
       <div className='flex flex-col min-h-screen'>
          <Head>
             <title>Dannick.dev</title>
+            <meta
+               name='description'
+               content="I'm Dannick Liudzius, a developer, tinkerer, creator. This is my website."
+            />
          </Head>
          <Navbar />
          <main className='flex-grow p-8 text-bluegray-800 dark:text-bluegray-50'>
