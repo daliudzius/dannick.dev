@@ -10,7 +10,7 @@ export default function Navbar() {
    useEffect(() => setMounted(true), [])
 
    return (
-      <header className='sticky top-0 z-10 flex items-center justify-between w-screen h-24 backdrop-filter backdrop-blur-sm backdrop-saturate-150'>
+      <header className='sticky top-0 z-10 flex items-center justify-between w-full h-24 mx-auto max-w-7xl backdrop-filter backdrop-blur-sm backdrop-saturate-150'>
          <button
             aria-label='Toggle Dark Mode'
             type='button'
@@ -49,14 +49,14 @@ export default function Navbar() {
                      Home
                   </a>
                </Link>
+               <Link href='/blog'>
+                  <a className='inline-flex justify-center h-6 focus-within:items-center w-14'>
+                     Blog
+                  </a>
+               </Link>
                <Link href='/experience'>
                   <a className='inline-flex justify-center h-6 focus-within:items-center w-14'>
                      Exp
-                  </a>
-               </Link>
-               <Link href='/about'>
-                  <a className='inline-flex justify-center h-6 focus-within:items-center w-14'>
-                     About
                   </a>
                </Link>
             </nav>

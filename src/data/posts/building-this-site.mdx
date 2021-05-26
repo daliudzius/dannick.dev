@@ -1,0 +1,258 @@
+---
+title: Building this Website with NextJS
+description: 'The process I took and technology choices I made in order to learn NextJS and
+build this website.'
+date: '2021-04-10'
+---
+
+<Image
+   alt={'Web pages in dark and light mode'}
+   src={'/blog/buiding-this-site/pages-dark-and-light.jpg'}
+   width={1125 / 2.5}
+   height={1218 / 2.5}
+   priority
+/>
+
+# The Goal
+
+I set out to learn and build a modern jamstack website that would begin as a web resume of sorts
+-- later to expand upon and showcase projects, this blog, maybe more. My goal was to gain enough
+experience with jamstack that I would feel confident enough to spin up any sort of websites
+that the future me might need. The web dev world out there is vast, yet the skills I’ve learned
+with this small project alone should allow me to rapidly build SEO friendly sites with basic
+requirements and moderate functionality. Above are some of the pages I built showing both light
+and dark mode. Here’s how I approached each step of the build.
+
+# The Stack
+
+The choice became easy merely at the cost of reading a thousand reddit and forum posts. I needed a
+stack that would cooperate well with my simple hobby needs yet give me the capability to scale beyond
+if desired. NextJS was calling to me at every turn. I also knew firebase would be an easy-to-setup
+choice if I needed to add authentication or a nosql database in the future.
+
+[**NextJS**](https://nextjs.org/) - The React framework. This allowed me to do the frontend and basic
+backend at the same time. I wanted to learn React and get a general refresh on JavaScript so this choice
+was perfect -- reading related posts and the docs detailing it’s various other capabilities sealed the deal.
+I based the rest of the stack off of this choice.
+
+[**TailwindCSS**](https://tailwindcss.com/) - Makes all the frontend work so much more pleasant.
+I truly recommend this approach to CSS if you have never tried it. Conveniently it goes hand in hand with Next
+since the docs mention it and give a boilerplate app to get started.
+
+[**Vercel**](https://vercel.com/) - Hosting solution. This has to be the most seamless way to launch
+a Next app.
+They created Next framework so it makes sense that they have those needs covered.
+My other contender was AWS because I am already familiar and it’s economical to scale,
+but ultimately Vercel won due to it’s wonderfully easy deployment for this Next-based stack.
+
+[**Figma**](https://www.figma.com/) - UI Mockup. Great for playing around with the structure and inspiring
+designs beforehand. I saved myself from many soul-sucking hours of fiddling with CSS by sticking to the mockup.
+You can also draw and export simple svg files from your mockup.
+
+# Learning
+
+I needed a solid refresh on vanilla JavaScript and I have never used React in a project.
+I ran through the CodeAcademy courses for both JS and React and was feeling prepared enough to begin
+on a Next project. I found what helped the most was looking at some of Lee Robinson’s
+[posts](https://leerob.io/) and [videos](https://www.youtube.com/user/MaStaleee/videos), reading from
+the NextJS [subreddit](https://www.reddit.com/r/nextjs/), and deploying and poking around some
+examples from the Next example [GitHub repo](https://GitHub.com/zeit/next.js/tree/canary/examples).
+I really liked the minimal style of Lee Robinson’s blog website so I heavily “borrowed”
+that style for this website design step.
+
+# Design
+
+Figma is just great. If you’re making a website I’d highly recommend finding your desired design
+by playing around in Figma first. There’s almost no learning curve especially if you’ve used
+apps like photoshop or illustrator before. The UI just makes sense to me and here’s a screenshot
+while I was designing one of the web pages.
+
+<Image
+   alt={'figma screenshot'}
+   src={'/blog/buiding-this-site/figma.png'}
+   width={1009 / 2}
+   height={943 / 2}
+/>
+
+Update: Since my deployment the Figma team unfortunately added constraints to the free tier account
+and now only allow 3 files with 3 pages each, previously unlimited. Unlimited was just the right
+amount.
+
+# Develop
+
+I began by cloning the
+[Next with Tailwind example](https://GitHub.com/vercel/next.js/tree/canary/examples/with-tailwindcss)
+which just saves about 10 minutes of setting Tailwind up from scratch. I made sure to then install
+some relevant eslint rules so my code didn’t immediately become spaghetti. I found
+[this eslint plugin](https://GitHub.com/manovotny/eslint-plugin-get-off-my-lawn)
+mentioned in one of Lee’s videos. Here is my eslint config file for the project:
+
+```js:.eslintrc.js
+module.exports = {
+  extends: 'get-off-my-lawn',
+  rules: {
+    'react/display-name': 0,
+    'react/react-in-jsx-scope': 0,
+    'react/jsx-no-literals': 0,
+    'no-param-reassign': 0,
+    'node/no-unpublished-require': 0,
+    'jsx-ally/anchor-is-valid': 0,
+    semi: 'never',
+  },
+};
+```
+
+I had an idea of the modules I planned on using, so I installed them via `yarn add <module>`. Here
+are the packages I ended up installing:
+
+```json:package.json
+...
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "date-fns": "^2.21.3",
+    "gray-matter": "^4.0.3",
+    "mdx-prism": "^0.3.3",
+    "next": "^10.2.0",
+    "next-mdx-remote": "^3.0.2",
+    "next-themes": "^0.0.14",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "remark-code-titles": "^0.1.2",
+    "remark-slug": "^6.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "eslint": "^7.24.0",
+    "eslint-config-get-off-my-lawn": "^6.0.1",
+    "postcss": "^8.2.10",
+    "rehype": "^11.0.0",
+    "tailwindcss": "^2.1.1"
+  }
+}
+```
+
+Then I started throwing in my jsx and building the structure of the pages based on my design.
+Everything on the initial site can be static so I went with the SSG route for my pages.
+I pulled up my Figma window, VSCode, and the browser which gave me one view to hackathon this website
+in short time. This part was truly a delightful development experience using the Next + Tailwind
+flow -- frankly I don’t think I could go back to any other web development flow.
+
+<Image
+   alt={'Web pages in dark and light mode'}
+   src={'/blog/buiding-this-site/dev-screens.gif'}
+   width={800}
+   height={335}
+/>
+
+This setup was excellent for productivity. From a design, you could build a website in a matter of a
+couple days. If you’re just starting out like I was but without a project in mind, I’d recommend
+building a clone of a website as practice. Lee’s got a video of him doing just that on a live
+stream cloning the Netflix landing page and authentication in just over an hour. Check it out,
+it provides a quick and digestible view of the power of Next + Tailwind, (Lee’s netflix video link).
+
+# Dark Mode
+
+After that breeze of setting up the main pages I added a dark mode toggle, another task made very
+easy by Tailwind. This module (link to dark mode module) along with the docs (link to tailwind docs)
+gave a clear walkthrough of setting it up. Then it’s just a matter of creating a \_document.js page
+and adding this line, selecting your preferred darkmode colors, and adding them into the jsx using
+the class prefix `dark:`
+
+```js:_document.js
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+
+class MyDocument extends Document {
+   render() {
+      return (
+         <Html lang='en'>
+            <Head>
+               <link
+                  rel='preload'
+                  href='/fonts/inter-var-latin.woff2'
+                  as='font'
+                  type='font/woff2'
+                  crossOrigin='anonymous'
+               />
+            </Head>
+            <body className='bg-theme'>
+               <Main />
+               <NextScript />
+            </body>
+         </Html>
+      )
+   }
+}
+
+export default MyDocument
+```
+
+Just add `dark:` to make css alterations when in dark mode. This code shows how
+you would change the text color inside a paragraph depending on if dark mode is toggled:
+
+```Html
+<p className='text-black dark:text-pink-500'>
+...
+```
+
+Using the Tailwind development flow I wanted to design my site mobile-first while making sure to build
+responsively for desktop sizes starting at the tablet breakpoint of 768px wide. Effectively building
+for two separate sizes and no more -- sweet and simple. My thought going into this was that visitors
+would likely be on mobile and web dev trends seemed to lean towared a mobile-first design.
+
+# Adding the Blog
+
+Lastly in the development phase I wanted to add a blog page that would utilize Next’s dynamic routing
+and pull blog content from markdown files in the same repository. Initially I wanted to try out
+integration with a headless CMS like [Sanity.io](https://www.sanity.io/) or [Strapi.io](https://strapi.io/),
+but decided against it since it’d add too much to my site when in reality I don't expect to write
+content often -- the small amount of content is much easier handled as markdown files in the same repo.
+The structure of my project would look like this:
+
+<Image
+   alt={'source code structure'}
+   src={'/blog/buiding-this-site/site-structure.jpg'}
+   width={296}
+   height={512}
+/>
+
+The markdown content for the blog would be inside `src/data/posts` while static files,
+like images, that go along with the blog post would be in `public/blog/<post_name>` so
+that they can be globally referrenced as per the
+[NextJS docs](https://nextjs.org/docs/basic-features/static-file-serving).
+
+Unrelated to the blog but for organizational purposes I also added a `src/components` folder to
+host any helper components, a `src/utils` folder to host non-react-component helper functions,
+and a `src/styles` folder that basically will only house a `globals.css` file for additional
+css needs that go beyond Tailwind's base styles.
+
+I made a choice to use [MDX](https://mdxjs.com/) as my Markdown flavor. Using something like
+MDX allows you to include jsx and React components directly in the markdown and utilize tools
+from Next like Next/Link and Next/Image which is great for automatic optimization of images
+in browsers. Using a convenient library called
+[next-mdx-remote](https://github.com/hashicorp/next-mdx-remote) allowed for easy loading of
+mdx content inside of Next's `getStaticProps` function on your `[slug].js` page.
+
+# Deploying
+
+I had tested out deploying to Vercel from their own app examples. This section will be short since
+it’s by far the easiest of the steps. The process goes like this:
+
+-  Host your app (or an example app) on [GitHub](https://github.com/)
+-  Make a free account on [Vercel](https://vercel.com/)
+-  Link your GitHub repo to Vercel
+-  Deploy
+
+Seriously it’s just that easy. Vercel works like magic and I’d absolutely recommend deploying there
+if you have a small to medium sized application. The [free tier](https://vercel.com/pricing)
+should be enough for a great percentage of the websites out there. Now when you push code to the
+repo and make a pull request Vercel will automatically pick up on that and provide a preview url
+for the pages. Merging the pull request to your main branch will then tell Vercel to go ahead
+and deploy. It’s just so ridiculously easy.
+
+# Conclusion
+
+This project gave me a chance to freshen up on my Javascript, learn more React, learn about NextJS,
+and some useful tools to spin up hobby websites rapidly and cleanly. I also learned that my writing
+is absolute trash but hopefully gets the points across. I’m hopeful that more posts will eventually
+shift my writing from trash into treasure. If there is a conclusion to draw from this post it’s that
+you should absolutely try out a small project using NextJS and Tailwind.
