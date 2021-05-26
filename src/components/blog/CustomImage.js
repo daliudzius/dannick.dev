@@ -8,6 +8,7 @@ export default function CustomImage({ alt, src, width, height, priority }) {
             src={src}
             width={width}
             height={height}
+            className='rounded'
             priority={priority}
          />
       </div>
