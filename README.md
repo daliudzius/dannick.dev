@@ -1,23 +1,26 @@
-# Next.js + Tailwind CSS Example
+# Dannick.dev - My personal site
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) (v2.1) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This website houses information about me, my resume, and a blog.
+It was built with:
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+[**NextJS**](https://nextjs.org/) - The React framework. This allowed me to do the frontend and basic
+backend at the same time. I wanted to learn React and get a general refresh on JavaScript so this choice
+was perfect -- reading related posts and the docs detailing it’s various other capabilities sealed the deal.
+I based the rest of the stack off of this choice.
 
-## Deploy your own
+[**TailwindCSS**](https://tailwindcss.com/) - Makes all the frontend work so much more pleasant.
+I truly recommend this approach to CSS if you have never tried it. Conveniently it goes hand in hand with Next
+since the docs mention it and give a boilerplate app to get started.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+[**Vercel**](https://vercel.com/) - Hosting solution. This has to be the most seamless way to launch
+a Next app.
+They created Next framework so it makes sense that they have those needs covered.
+My other contender was AWS because I am already familiar and it’s economical to scale,
+but ultimately Vercel won due to it’s wonderfully easy deployment for this Next-based stack.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+[**Figma**](https://www.figma.com/) - UI Mockup. Great for playing around with the structure and inspiring
+designs beforehand. I saved myself from many soul-sucking hours of fiddling with CSS by sticking to the mockup.
+You can also draw and export simple svg files from your mockup.
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Read more information about building this site on a 
+[blog post](https://dannick.dev/blog/building-this-site)

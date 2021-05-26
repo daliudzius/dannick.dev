@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import SocialLinks from '../components/SocialLinks'
 import Footer from '../components/Footer'
@@ -15,19 +16,38 @@ export default function Home() {
          </Head>
          <Navbar />
          <main className='flex-grow p-8 text-bluegray-800 dark:text-bluegray-50'>
-            <p>Hi friend, I'm</p>
-            <h1 className='my-1 text-5xl font-bold bg-clip-text gradient-purple-pink dark:text-transparent'>
-               Dannick
-            </h1>
-            <SocialLinks />
-            <div className='text-bluegray-600 dark:text-bluegray-200'>
+            <div className='flex flex-col'>
+               <div>
+                  <p>Hi friend, I'm</p>
+                  <h1
+                     title='Dannick Liudzius'
+                     className='my-1 text-5xl font-bold bg-clip-text gradient-purple-pink dark:text-transparent'
+                  >
+                     Dannick
+                  </h1>
+               </div>
+               <div className='flex flex-col items-center my-5 md:self-start'>
+                  <Image
+                     src='/profile-pic.png'
+                     alt='Profile picture'
+                     width={150}
+                     height={150}
+                     quality={40}
+                     className='rounded-full'
+                     priority
+                  />
+                  <SocialLinks />
+               </div>
+            </div>
+            <div>
                <p>
-                  I'm a developer, tinkerer, and creator. I work at SLA as a
-                  software engineer building and shipping enterprise software.
+                  I'm a developer, tinkerer, and creator. I work at SLA
+                  California as a software engineer building and shipping
+                  enterprise web and Windows applications.
                </p>
                <br />
                <p>
-                  I enjoy creating software and hardware that's&nbsp;
+                  I enjoy creating software and hardware that's{' '}
                   <span className='text-green-500 dark:text-green-400'>
                      simple
                   </span>
@@ -41,14 +61,9 @@ export default function Home() {
                   </span>
                   .
                </p>
-               <br />
-               <p>
-                  Currently I am focused on keeping pace with the latest web
-                  design and tech stack trends.
-               </p>
             </div>
-            <div className='flex justify-center mt-8'>
-               <div className='border-2 border-purple-400 rounded dark:border-transparent gradient-purple-pink'>
+            <div className='grid justify-center md:justify-start'>
+               <button className='my-8 border-2 border-purple-400 rounded dark:border-transparent gradient-purple-pink'>
                   <a
                      href="mailto:daliudzius@gmail.com?subject=Let's Chat"
                      className='flex items-center justify-center w-40 rounded bg-theme h-14'
@@ -61,6 +76,38 @@ export default function Home() {
                      </svg>
                      Let's Chat
                   </a>
+               </button>
+            </div>
+            <div>
+               <p>
+                  Currently I focus on keeping pace with the latest web design
+                  and tech stack trends. In my free time you can find me
+                  running, cooking, tinkering with electronics, or slapping my
+                  keyboard to a new project.
+               </p>
+               <br />
+               <p>
+                  I’m always looking for new tech to learn and ways I can
+                  improve on what I already use. This unusual year has allocated
+                  more time at my desk to do just that — here are technologies
+                  I’ve been working with lately:
+               </p>
+               <br />
+               <div className='flex space-x-8 leading-8'>
+                  <ul className='list-disc list-inside'>
+                     <li>JavaScript&nbsp;ES6+</li>
+                     <li>Next/React</li>
+                     <li>Python</li>
+                     <li>Arduino</li>
+                     <li>MQTT</li>
+                  </ul>
+                  <ul className='list-disc list-inside'>
+                     <li>C#</li>
+                     <li>Entity C#</li>
+                     <li>LINQ</li>
+                     <li>MySQL</li>
+                     <li>AWS</li>
+                  </ul>
                </div>
             </div>
          </main>
