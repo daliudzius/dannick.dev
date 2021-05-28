@@ -22,14 +22,17 @@ export default function PostLayout({ children, frontMatter }) {
             />
          </Head>
          <Navbar />
-         <main className='flex-grow w-full px-8'>
-            <article className='flex flex-col items-start justify-center w-full max-w-2xl p-8 mx-auto'>
+         <main className='flex-grow w-full px-8 pb-8'>
+            <article className='flex flex-col items-start justify-center w-full max-w-2xl mx-auto'>
                <h1 className='text-4xl font-bold bg-clip-text gradient-purple-pink dark:text-transparent text-bluegray-800'>
                   {frontMatter.title}
                </h1>
                <div className='mt-2 text-sm text-bluegray-600 dark:text-bluegray-400'>
                   Dannick Liudzius •{' '}
                   {format(parseISO(frontMatter.date), 'MMMM dd, yyyy')}
+                  <p className='text-bluegray-400 dark:text-bluegray-600'>
+                     {frontMatter.length}min read
+                  </p>
                </div>
                <div className='w-full prose dark:prose-dark'>{children}</div>
             </article>
