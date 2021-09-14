@@ -8,7 +8,6 @@
     "node/no-unpublished-require": 0,
     "jsx-ally/anchor-is-valid": 0,
     "@next/next/no-document-import-in-page": 0,
-    "semi": 0,
-    "ignoreDuringBuilds": 0
+    "semi": 0
  }
 }
