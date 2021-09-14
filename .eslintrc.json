@@ -7,9 +7,7 @@
     "no-param-reassign": 0,
     "node/no-unpublished-require": 0,
     "jsx-ally/anchor-is-valid": 0,
-    "linebreak-style": ["error", "windows"],
-    "@next/next/no-document-import-in-page": "off",
-    "semi": 0,
-    "ignoreDuringBuilds": true
+    "@next/next/no-document-import-in-page": 0,
+    "semi": 0
  }
 }
