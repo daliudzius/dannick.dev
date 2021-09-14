@@ -9,6 +9,7 @@
     "jsx-ally/anchor-is-valid": 0,
     "linebreak-style": ["error", "windows"],
     "@next/next/no-document-import-in-page": "off",
-    "semi": 0
+    "semi": 0,
+    "ignoreDuringBuilds": true
  }
 }
