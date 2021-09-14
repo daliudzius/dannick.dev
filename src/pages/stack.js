@@ -112,7 +112,7 @@ export default function Home() {
                      href='https://github.com/leerob'
                      className='border-b border-current border-dotted hover:border-solid'
                   >
-                     Lee Robinson's
+                     Lee Robinson&apos;s
                   </a>{' '}
                   expertise on Nextjs and Vercel — thanks Lee!
                </p>

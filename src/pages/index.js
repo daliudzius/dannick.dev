@@ -18,7 +18,7 @@ export default function Home() {
          <main className='flex-grow p-8 text-bluegray-800 dark:text-bluegray-50'>
             <div className='flex flex-col'>
                <div>
-                  <p>Hi friend, I'm</p>
+                  <p>Hi friend, I&apos;m</p>
                   <h1
                      title='Dannick Liudzius'
                      className='my-1 text-5xl font-bold bg-clip-text gradient-purple-pink dark:text-transparent'
@@ -41,13 +41,13 @@ export default function Home() {
             </div>
             <div>
                <p>
-                  I'm a developer, tinkerer, and creator. I work at SLA
+                  I&apos;m a developer, tinkerer, and creator. I work at SLA
                   California as a software engineer building and shipping
                   enterprise web and Windows applications.
                </p>
                <br />
                <p>
-                  I enjoy creating software and hardware that's{' '}
+                  I enjoy creating software and hardware that&apos;s{' '}
                   <span className='text-green-500 dark:text-green-400'>
                      simple
                   </span>
@@ -74,7 +74,7 @@ export default function Home() {
                      >
                         <path d='M1.215.086l14.303 7.117a.86.86 0 01.351.326.91.91 0 010 .941.86.86 0 01-.351.326L1.215 15.913a.82.82 0 01-.91-.118.885.885 0 01-.266-.413.917.917 0 01-.009-.498L1.836 8 .03 1.114A.917.917 0 01.04.617.886.886 0 01.306.205a.82.82 0 01.91-.118V.086zM1.11 1.209l1.645 6.276h7.427c.124 0 .243.047.335.131a.536.536 0 01.17.328l.005.07a.543.543 0 01-.126.35.504.504 0 01-.314.176l-.07.005H2.747L1.11 14.79 14.759 8 1.11 1.208z' />
                      </svg>
-                     Let's Chat
+                     Let&apos;s Chat
                   </a>
                </button>
             </div>

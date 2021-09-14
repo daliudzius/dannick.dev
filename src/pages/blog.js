@@ -28,9 +28,10 @@ export default function Index({ posts }) {
          <main className='flex-grow w-full p-8 overflow-y-auto text-bluegray-800 dark:text-bluegray-50'>
             <h1 className='mb-4 text-4xl font-bold'>My Blog</h1>
             <p className='mb-10 dark:text-bluegray-200'>
-               You can't have a personal website without a blog, right? Here
-               lies a chunk of the web where I can hastily jot down notes about
-               my projects while they're fresh. <br /> Tread with vigilance.
+               You can&apos;t have a personal website without a blog, right?
+               Here lies a chunk of the web where I can hastily jot down notes
+               about my projects while they&apos;re fresh. <br /> Tread with
+               vigilance.
             </p>
             <ul className='space-y-5'>
                {posts.map((post) => (
