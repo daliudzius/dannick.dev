@@ -17,7 +17,7 @@ export default function Home() {
          <Navbar />
          <main className='flex-grow p-8 text-bluegray-800 dark:text-bluegray-50'>
             <div className='flex flex-col'>
-               <div>
+               <div className='flex flex-col items-center md:self-start'>
                   <p>Hi friend, I&apos;m</p>
                   <h1
                      title='Dannick Liudzius'
