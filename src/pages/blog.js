@@ -42,7 +42,11 @@ export default function Index({ posts }) {
                      >
                         <a>
                            <h2 className='text-lg font-bold'>
-                              {post.data.title}
+                              {post.data.title}{' '}
+                              <span className='text-base font-normal text-bluegray-600 dark:text-bluegray-400'>
+                                 {' '}
+                                 • {post.data.length} minutes
+                              </span>
                            </h2>
                            <p className='text-bluegray-600 dark:text-bluegray-400'>
                               {post.data.description}
