@@ -56,9 +56,6 @@ function Experiences() {
       blue: 'text-blue-400',
    }
 
-   //add mapping of json data
-   //format flex/something to allow gitline
-
    return work.map((job) => (
       <div key={job.date} className='relative'>
          <div
