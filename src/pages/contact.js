@@ -11,12 +11,12 @@ export default function Home() {
             <meta name='description' content='Contact form.' />
          </Head>
          <Navbar />
-         <main className='flex flex-col flex-grow p-8 space-y-2 overflow-y-auto text-bluegray-800 dark:text-bluegray-50'>
+         <main className='flex flex-col flex-grow p-8 space-y-2 text-bluegray-800 dark:text-bluegray-50'>
             <h1 className='text-4xl font-bold'>Contact Me</h1>
-            <p>Shoot me an email if you have a question or personal beef.</p>
+            <p>Send me an email if you have a question for me </p>
+            <p>...or a problem with me at a deep, personal level.</p>
             <ContactForm />
          </main>
-
          <Footer />
       </div>
    )
