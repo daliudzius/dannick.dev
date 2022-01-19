@@ -29,6 +29,12 @@
       @apply max-w-7xl mx-auto;
    }
 
+   body {
+      /* This prevents scrollbar caused
+         content shift on Chrome only */
+      overflow: overlay;
+   }
+
    .gradient-purple-pink {
       @apply bg-gradient-to-br from-purple-500 to-pink-500;
    }
