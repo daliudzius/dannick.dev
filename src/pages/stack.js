@@ -13,7 +13,7 @@ export default function Home() {
             />
          </Head>
          <Navbar />
-         <main className='flex flex-col flex-grow p-8 space-y-2 space-y-8 overflow-y-auto text-bluegray-800 dark:text-bluegray-50'>
+         <main className='flex flex-col flex-grow p-8 space-y-8 overflow-y-auto text-bluegray-800 dark:text-bluegray-50'>
             <div>
                <h1 className='text-4xl font-bold'>Tech Stack</h1>
                <h1 className='text-4xl tracking-tight text-bluegray-600 dark:text-bluegray-400'>
