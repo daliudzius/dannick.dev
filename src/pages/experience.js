@@ -17,17 +17,17 @@ export default function Home() {
          <main className='flex flex-col flex-grow p-8 overflow-y-auto text-bluegray-800 dark:text-bluegray-50'>
             <div className='flex items-center justify-between'>
                <h1 className='mb-4 mr-3 text-4xl font-bold'>Experience</h1>
-               <div className='mb-4 border-2 border-purple-400 rounded dark:border-transparent gradient-purple-pink'>
+               <button className='mb-4 text-purple-600 transition duration-75 rounded outline-none ring-inset dark:text-white ring-2 dark:hover:ring-0 dark:focus:ring-white ring-purple-400 dark:ring-purple-500 dark:hover:gradient-purple-pink dark:focus:gradient-purple-pink focus:bg-purple-500 hover:bg-purple-500 focus:ring-purple-500 hover:ring-purple-500 hover:text-white focus:text-white'>
                   <a
                      href='/dannickliudzius.pdf'
-                     className='flex items-center justify-center px-2 text-sm rounded h-9 bg-theme'
+                     className='flex items-center justify-center w-24 px-2 transition duration-75 h-9 dark:text-white hover:text-white dark:hover:text-white'
                      download
                   >
                      <svg
                         fill='none'
                         stroke='currentColor'
                         viewBox='0 0 14 14'
-                        className='inline-block w-4 mr-2 text-purple-600 dark:text-purple-400'
+                        className='w-4 mr-2 stroke-current'
                      >
                         <path
                            strokeLinecap='round'
@@ -37,7 +37,7 @@ export default function Home() {
                      </svg>
                      My&nbsp;CV
                   </a>
-               </div>
+               </button>
             </div>
             <Experiences />
          </main>
