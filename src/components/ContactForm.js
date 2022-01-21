@@ -39,7 +39,9 @@ export default function ContactForm() {
       <div>
          <form onSubmit={handleSubmit}>
             <div className='flex flex-col mt-6 mb-8'>
-               <label className='mb-1 text-gray-400'>name</label>
+               <label className='mb-1 text-purple-500 dark:text-purple-400'>
+                  Name
+               </label>
                <input
                   required
                   type='text'
@@ -50,7 +52,9 @@ export default function ContactForm() {
             </div>
 
             <div className='flex flex-col mb-8'>
-               <label className='mb-1 text-gray-400'>email</label>
+               <label className='mb-1 text-purple-500 dark:text-purple-400'>
+                  Email
+               </label>
                <input
                   required
                   type='email'
@@ -61,7 +65,9 @@ export default function ContactForm() {
             </div>
 
             <div className='flex flex-col mb-8'>
-               <label className='mb-1 text-gray-400'>message</label>
+               <label className='mb-1 text-purple-500 dark:text-purple-400'>
+                  Message
+               </label>
                <textarea
                   required
                   name='message'
@@ -80,7 +86,7 @@ export default function ContactForm() {
                ) : (
                   <button
                      type='submit'
-                     className='w-20 text-lg text-purple-600 transition rounded outline-none ring-inset h-9 dark:text-white ring-2 dark:hover:ring-0 dark:focus:ring-white ring-purple-400 dark:ring-purple-500 dark:hover:gradient-purple-pink dark:focus:gradient-purple-pink focus:bg-purple-500 hover:bg-purple-500 focus:ring-purple-500 hover:ring-purple-500 hover:text-white focus:text-white'
+                     className='w-20 text-lg text-purple-600 transition duration-75 rounded outline-none ring-inset h-9 dark:text-white ring-2 dark:hover:ring-0 dark:focus:ring-white ring-purple-400 dark:ring-purple-500 dark:hover:gradient-purple-pink dark:focus:gradient-purple-pink focus:bg-purple-500 hover:bg-purple-500 focus:ring-purple-500 hover:ring-purple-500 hover:text-white focus:text-white'
                      disabled={!canSubmit}
                   >
                      Send
