@@ -39,7 +39,7 @@ export default function ContactForm() {
       <div>
          <form onSubmit={handleSubmit}>
             <div className='flex flex-col mt-6 mb-8'>
-               <label className='mb-1 text-purple-500 dark:text-purple-400'>
+               <label className='mb-1 text-purple-600 dark:text-purple-400'>
                   Name
                </label>
                <input
@@ -52,7 +52,7 @@ export default function ContactForm() {
             </div>
 
             <div className='flex flex-col mb-8'>
-               <label className='mb-1 text-purple-500 dark:text-purple-400'>
+               <label className='mb-1 text-purple-600 dark:text-purple-400'>
                   Email
                </label>
                <input
@@ -65,7 +65,7 @@ export default function ContactForm() {
             </div>
 
             <div className='flex flex-col mb-8'>
-               <label className='mb-1 text-purple-500 dark:text-purple-400'>
+               <label className='mb-1 text-purple-600 dark:text-purple-400'>
                   Message
                </label>
                <textarea
