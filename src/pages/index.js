@@ -42,9 +42,9 @@ export default function Home() {
             </div>
             <div>
                <p>
-                  I&apos;m a developer, tinkerer, and creator. I work at SLA
-                  California as a software engineer building and shipping
-                  enterprise web and Windows applications.
+                  I&apos;m a developer, tinkerer, and creator. I work at Hasura
+                  as a Solutions Engineer helping clients architect their data
+                  access layer.
                </p>
                <br />
                <p>
@@ -82,15 +82,15 @@ export default function Home() {
                <p>
                   Currently I focus on keeping pace with the latest web design
                   and tech stack trends. In my free time you can find me
-                  running, cooking, tinkering with electronics, or slapping my
-                  keyboard to a new project.
+                  running, cooking, tinkering with electronics, or shaking my
+                  keyboard and hoping code comes out.
                </p>
                <br />
                <p>
                   I’m always looking for new tech to learn and ways I can
-                  improve on what I already use. This unusual year has allocated
-                  more time at my desk to do just that — here are technologies
-                  I’ve been working with lately:
+                  improve on what I already use. These unusual years have
+                  allocated more time at my desk to do just that — here are
+                  technologies I’ve been working with lately:
                </p>
                <br />
                <div className='flex space-x-8 leading-8'>
@@ -102,10 +102,10 @@ export default function Home() {
                      <li>MQTT</li>
                   </ul>
                   <ul className='list-disc list-inside'>
+                     <li>Docker</li>
+                     <li>Kubernetes</li>
+                     <li>PostgreSQL</li>
                      <li>C#</li>
-                     <li>Entity C#</li>
-                     <li>LINQ</li>
-                     <li>MySQL</li>
                      <li>AWS</li>
                   </ul>
                </div>

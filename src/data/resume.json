@@ -2,10 +2,24 @@
    "updated":"April 2021",
    "work":[
       {
+         "company":"Hasura",
+         "company-label":"Hasura",
+         "location":"San Francisco",
+         "date":"April 2022 - Present",
+         "title":"Sales Engineer",
+         "bullets":[
+            "Prepare and deliver technical presentations explaining Hasura products to existing and prospective customers",
+            "Talk with customers and engineers to assess and determine system requirements",
+            "Collaborate with Sales, Product, and Engineering teams to understand customer requirements and to develop and implement Hasura products",
+            "Plan and design Hasura product PoC's to meet customer needs"
+         ],
+         "color":"blue"
+      },
+      {
          "company":"SLA California",
          "company-label":"Surplus Lines Association of California",
          "location":"San Francisco",
-         "date":"December 2018 - Present",
+         "date":"December 2018 - April 2022",
          "title":"Software Engineer",
          "bullets":[
             "Maintain and enhance codebase of internal and client-facing software suite of web and Windows applications through the implementation of new features and projects",
@@ -13,7 +27,7 @@
             "Serve as a technical advisor on product development and business requirements by interfacing directly with technical clients and executives, as well as working alongside dev contractors to drive projects into rapid production",
             "Enable growth of the team by leading technical interviews for application developers and infrastructure engineers"
          ],
-         "color":"blue"
+         "color":"green"
       },
       {
          "company":"SLA California",
