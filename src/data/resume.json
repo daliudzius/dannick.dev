@@ -6,7 +6,7 @@
          "company-label":"Hasura",
          "location":"San Francisco",
          "date":"April 2022 - Present",
-         "title":"Sales Engineer",
+         "title":"Solutions Engineer",
          "bullets":[
             "Prepare and deliver technical presentations explaining Hasura products to existing and prospective customers",
             "Talk with customers and engineers to assess and determine system requirements",
@@ -24,8 +24,7 @@
          "bullets":[
             "Maintain and enhance codebase of internal and client-facing software suite of web and Windows applications through the implementation of new features and projects",
             "Develop in a wide array of environments including: ASP.Net MVC framework, WPF using MVVM for Windows apps, C# and Razor C#, Kendo UI, SQL, integration with OracleDB, Telerik Reporting, BitBucket VCS, Mantis, and Jira for bug tracking",
-            "Serve as a technical advisor on product development and business requirements by interfacing directly with technical clients and executives, as well as working alongside dev contractors to drive projects into rapid production",
-            "Enable growth of the team by leading technical interviews for application developers and infrastructure engineers"
+            "Serve as a technical advisor on product development and business requirements by interfacing directly with technical clients and executives, as well as working alongside dev contractors to drive projects into rapid production"
          ],
          "color":"green"
       },
@@ -37,9 +36,8 @@
          "title":"Infastructure Engineer",
          "bullets":[
             "Design and manage the internal IT architecture through the upgrading and implementation of various hardware and software components, including: Windows Servers, Fortinet VPN and Firewall, and internal fire share servers",
-            "Enhance the security and efficiency of the organization’s environment by providing technical expertise to our executives through the evaluation and assessment of various technology solutions prior to their adoption and integration",
             "Oversee and administer the migration of in-house and Rackspace hosted data warehouses to Amazon Web Services",
-            "Provide technical assistance to the organization’s workforce by serving as the internal Helpdesk and IT support"
+            "Provide technical assistance to the organization’s workforce by serving as the internal IT support and interim Sysadmin"
          ],
          "color":"red"
       },

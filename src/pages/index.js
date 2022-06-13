@@ -43,8 +43,8 @@ export default function Home() {
             <div>
                <p>
                   I&apos;m a developer, tinkerer, and creator. I work at Hasura
-                  as a Solutions Engineer helping clients architect their data
-                  access layer.
+                  as a Solutions Engineer helping clients architect and
+                  implement their data access layer.
                </p>
                <br />
                <p>
