@@ -10,6 +10,12 @@ export default function Home() {
       <div className='flex flex-col min-h-screen'>
          <Head>
             <title>Dannick.dev</title>
+            <script
+               async
+               defer
+               data-website-id='74f2fb17-b88a-4271-a407-d0b17dfc6689'
+               src='https://umami-analytics-dannickdev.vercel.app/umami.js'
+            ></script>
             <meta
                name='description'
                content="I'm Dannick Liudzius, a developer, tinkerer, creator. This is my website."

@@ -5,6 +5,12 @@ class MyDocument extends Document {
       return (
          <Html lang='en'>
             <Head>
+               <script
+                  async
+                  defer
+                  data-website-id='74f2fb17-b88a-4271-a407-d0b17dfc6689'
+                  src='https://umami-analytics-dannickdev.vercel.app/umami.js'
+               ></script>
                <link
                   rel='preload'
                   href='/fonts/inter-var-latin.woff2'
